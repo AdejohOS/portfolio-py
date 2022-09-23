@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
+/** https://colorhunt.co/palette/1c658c398ab9d8d2cbeeeeee **/
+
+:root {
+    --base-font: 'Poppins', sans-serif;; 
+    --header-height: 4rem;
+    --font-color: #444444;
+
+    --primary-color: #355C7D;
+
+    --box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    --line-opacity-color: rgba(68, 68, 68, 0.13);
+    --grey-bg-color: #f5f6f6;
+}
+
+i{
+    vertical-align: middle;
+}
+
+body {
+    position: relative;
+    font-family: var(--base-font);
+    font-size: 1rem;
+    color: #444444;
+}
+button{
+    border: none;
+    background: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    
+    width: 100%;
+    background: #f5f6f6;
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+
+    
+}
+
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    
+}
+nav ul li a{
+    color: var(--font-color);
+    
+}
+.hero{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.hero-content {
+    position: relative;
+    margin: 4em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;   
+
+}
+
+
+.btn{
+    border: 2px solid #355C7D;
+    display: inline-block;
+    padding: .3rem .6rem;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+}
+.btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.hello{
+
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+.name{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #1C658C;
+}
+
+.hero-links {
+    margin-top: 2rem;   
+}
+
+
+
+
+.skill-set {
+    width: 100%;
+    background: var(--grey-bg-color);
+    box-shadow: var(--box-shadow);
+    
+}
+.skill-set-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em;
+}
+
+.my-skill-content {
+    position: relative;
+    padding: 2rem;
+    background: var(--primary-color);
+    border-radius: .5em;
+    margin-bottom: 4em;
+    color: #fff;
+}
+
+.skill-box {
+    position: absolute;
+    top: -26px;
+    left: -26px;
+    background: var(--grey-bg-color);
+    border: 5px solid var(--grey-bg-color);
+    padding: 1em;
+    color: var(--font-color);
+    
+    border-radius: .5em;
+   
+
+}
+.skill-item p{
+    padding-right: 1em;
+}
+.content{
+    padding: 5em 0;
+}
+
+
+.intro-skill h2{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.intro-skill h2::after{
+    content: '';
+    height: 10px;
+    background: #EE6983;
+    width: 60%;
+    display: inline-block;
+}
+
+
+.skill-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.2em;
+}
+
+.skill-item i{
+    color: #1C658C;
+    font-size: 1.5em;
+    
+}
+
+
+
+
+
+
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    margin-top: 2em ;
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: .7rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+.portfolio-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #020202b9;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.portfolio-link {
+    margin-top: 4em;
+}
+
+.resume {
+    background: var(--grey-bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+.Blog {
+    
+}
+.blog-item {
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .7rem;
+    overflow: hidden;
+}
+
+.blog-text{
+    padding: 1em;
+    color: var(--font-color);
+}
+
+.date-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-text p{
+    font-size: .8rem;
+}
+.blog-text h2 {
+    font-size: 1rem;
+}
+.blog-text i{
+    color: var(--primary-color);
+}
+.details-item{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1.5em;
+
+}
+.details-item .con{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.port-intro{
+    margin-bottom: 2em;
+}
+
+
+
+   
+.input-container {
+    position: relative;
+    margin: 1rem 0;
+    background: var(--grey-bg-color);
+  }
+  
+  .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--base-color);
+    background: none;
+    padding: 0.45rem 1.2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: .25rem;
+    transition: 0.3s;
+  }
+  
+  .submit {
+    background: none;
+  }
+
+  .socials a {
+    color: #EE6983;
+    font-size: 1.5rem;
+    padding-right: 1.5em;
+  }
+
+  textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: .25rem;
+    resize: none;
+    overflow-y: auto;
+  }
+
+  ::-webkit-input-placeholder{
+      color: var(--base-color);
+      font-weight: 200;
+
+  }
+  
+
+
+footer {
+    background: #355C7D;
+}
+
+.footer-content{
+    color: #fff;
+    text-align: center;
+    padding: 3em;
+}
+
+.my-skill-content  i{
+    color: #fff;
+}
+
+@media screen and (min-width: 576px) {
+
+    
+        
+        
+}
+
+@media  screen and (min-width: 768px) {
+    .hero-content {
+        position: relative;
+        margin: 4em 0;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 1rem;   
+    
+    }
+
+    .skill-set-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2em;
+    }
+    .hero{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .name{
+        font-size: 3rem;
+        letter-spacing: 4px;
+        
+    }
+    .header-toggle {
+        display: none;
+    }
+    
+    .intro-skill h2{
+        font-size: 2rem;
+        display: inline-block;
+    }
+    .btn{
+        
+        letter-spacing: 4px;
+        
+    }
+    
+
+    .portfolio-content {
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
