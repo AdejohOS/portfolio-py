@@ -1,1 +1,1 @@
-# portfolio
+This is my Portfolio Website, Over the years i have had experience in various software development tools such as Python, Javascript etc. I decided to put up this Portfolio so show my Journey with various Completed Projects and tell my story with blog post.
